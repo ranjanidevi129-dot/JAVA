@@ -1,0 +1,25 @@
+class Student {
+    String name;
+    int rollNo;
+    double marks;
+
+    public Student(String name, int rollNo, double marks) {
+        this.name = name;
+        this.rollNo = rollNo;
+        this.marks = marks;
+    }
+
+    public void display() {
+        System.out.println("Student Details");
+        System.out.println("Name: " + name);
+        System.out.println("Roll No: " + rollNo);
+        System.out.println("Marks: " + marks);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Student student1 = new Student("Jayaseelan", 59, 49.9);
+        student1.display();
+    }
+}
