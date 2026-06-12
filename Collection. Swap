@@ -1,0 +1,20 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+       
+        ArrayList<String> names = new ArrayList<String>();
+        
+        
+        names.add("Alice");  // Index 0
+        names.add("Bob");    // Index 1
+        names.add("Charlie");// Index 2
+        names.add("David");  // Index 3
+        
+        System.out.println("Before swap: " + names);
+        
+        
+        Collections.swap(names, 0, 2);
+        System.out.println( names);
+    }
+}
